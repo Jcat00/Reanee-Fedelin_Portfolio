@@ -676,6 +676,25 @@
 
     .hero-right { display: none; }
 
+#hero {
+  background-image: url('Me.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(4,6,15,0.65);
+  z-index: 1;
+}
+
+.hero-left {
+  position: relative;
+  z-index: 2;
+}
+
     .hero-name { font-size: 3.2rem; }
 
     #about {
