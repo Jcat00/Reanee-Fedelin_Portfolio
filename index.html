@@ -249,8 +249,8 @@
   }
 
   .orbit-photo {
-    width: 130px;
-    height: 130px;
+    width: 1350px;
+    height: 1350px;
     border-radius: 50%;
     border: 2px solid rgba(201,169,110,0.3);
     object-fit: cover;
@@ -262,7 +262,7 @@
     color: var(--soft);
     letter-spacing: 0.1em;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
   }
 
   /* DIVIDER */
@@ -816,7 +816,7 @@
     <div class="orbit-ring"></div>
     <div class="orbit-ring"></div>
     <div class="orbit-center">
-      <div class="orbit-photo">[ Your Photo Here ]</div>
+      <img src="Me.png" class="orbit-photo">
     </div>
   </div>
 </section>
@@ -1021,90 +1021,58 @@
 <section id="portfolio">
   <div class="section-label">Portfolio</div>
   <h2 class="section-title">Work <em>Samples</em></h2>
-  <div class="portfolio-grid">
+  <div class="portfolio-grid" style="grid-template-columns: repeat(2,1fr); max-width:900px; margin:0 auto;">
+
     <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;" onclick="window.open('1.pdf', '_blank')">
+  <div style="font-size:2rem;margin-bottom:16px;">📄</div>
+  <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">CEO Speaker Profile</div>
+  <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">PDF Document</div>
+  <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View Profile →</div>
+</div>
       <div class="portfolio-overlay">
         <div class="portfolio-overlay-title">CEO Speaker Profile</div>
-        <div class="portfolio-overlay-desc">Speaker profile that secured acceptance at ECC NZ conference</div>
+        <div class="portfolio-overlay-desc">Designed and written from scratch. This speaker profile secured the CEO an acceptance to speak at the ECC Early Childhood Care conference in New Zealand.</div>
       </div>
     </div>
-    <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">LinkedIn Content</div>
-        <div class="portfolio-overlay-desc">Posts that drove report download requests from engaged followers</div>
-      </div>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">Award Nominations</div>
-        <div class="portfolio-overlay-desc">Nomination writing that resulted in 3 industry wins for the CEO</div>
-      </div>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">Event Planning</div>
-        <div class="portfolio-overlay-desc">India office launch — private backwater cruise coordination</div>
-      </div>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">Canva Design Work</div>
-        <div class="portfolio-overlay-desc">Graphic and visual materials created for executive use</div>
-      </div>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-placeholder">
-        <div class="portfolio-placeholder-icon">🖼️</div>
-        <div class="portfolio-placeholder-text">Add Your Work Sample</div>
-      </div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">Your Sample Here</div>
-        <div class="portfolio-overlay-desc">Upload any additional work you want to showcase</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-label">Contact</div>
-  <h2 class="section-title">Let's <em>Connect</em></h2>
-  <p class="contact-intro">Currently open to part-time remote opportunities alongside my full-time role. Looking for something stable, long-term, and genuinely collaborative.</p>
-  <div class="contact-links">
-    <div class="contact-link">
-      <span class="contact-link-label">Email</span>
-      <span class="contact-link-value">reanee.f.padilla@gmail.com</span>
+    <div class="portfolio-card">
+      <img src="2.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;" alt="India Team Event">
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">India Office Launch Event</div>
+        <div class="portfolio-overlay-desc">Planned and coordinated entirely remotely including a private backwater boat cruise for the new India office team and flights for 2 executives from Sydney.</div>
+      </div>
     </div>
-    <div class="contact-link">
-      <span class="contact-link-label">WhatsApp / Viber</span>
-      <span class="contact-link-value">+63 930 351 9126</span>
+
+    <div class="portfolio-card" onclick="window.open('https://jcat00.github.io/Kochi-Team-Activities/', '_blank')" style="cursor:pointer;">
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:16px;">🚢</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">Beyond Words</div>
+        <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Kochi Team Day Out</div>
+        <div style="font-size:0.75rem;color:#8891b0;line-height:1.7;">Billiards · Backwater Sunset Cruise · BBQ Nation</div>
+        <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View Itinerary →</div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">Kochi Team Event Itinerary</div>
+        <div class="portfolio-overlay-desc">A full team day out planned for the India office including billiards, a private sunset backwater cruise across 27 islands, and dinner at BBQ Nation. Click to view the live itinerary.</div>
+      </div>
     </div>
-    <div class="contact-link">
-      <span class="contact-link-label">Location</span>
-      <span class="contact-link-value">Muntinlupa City, Philippines</span>
+
+    <div class="portfolio-card" onclick="window.open('3.xlsx', '_blank')" style="cursor:pointer;">
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:16px;">📊</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">Crisis Presentation CRM</div>
+        <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Task Tracker · Team Overview · Risk Register</div>
+        <div style="font-size:0.75rem;color:#8891b0;line-height:1.7;">Built from scratch to manage a high-stakes team presentation</div>
+        <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View File →</div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">Crisis Presentation CRM</div>
+        <div class="portfolio-overlay-desc">Built a CRM from scratch to manage a high-stakes team presentation, assigning tasks, tracking progress, flagging technicals, and managing risks across 5 team members.</div>
+      </div>
     </div>
+
   </div>
-  <div class="availability">Available for Part-Time Work</div>
 </section>
 
 <footer>
