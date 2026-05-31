@@ -1021,29 +1021,9 @@
 <section id="portfolio">
   <div class="section-label">Portfolio</div>
   <h2 class="section-title">Work <em>Samples</em></h2>
-  <div class="portfolio-grid" style="grid-template-columns: repeat(2,1fr); max-width:900px; margin:0 auto;">
+  <div class="portfolio-grid" style="grid-template-columns: repeat(3,1fr); max-width:1100px; margin:0 auto; align-items:start;">
 
-    <div class="portfolio-card">
-      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;" onclick="window.open('1.pdf', '_blank')">
-  <div style="font-size:2rem;margin-bottom:16px;">📄</div>
-  <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">CEO Speaker Profile</div>
-  <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">PDF Document</div>
-  <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View Profile →</div>
-</div>
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">CEO Speaker Profile</div>
-        <div class="portfolio-overlay-desc">Designed and written from scratch. This speaker profile secured the CEO an acceptance to speak at the ECC Early Childhood Care conference in New Zealand.</div>
-      </div>
-    </div>
-
-    <div class="portfolio-card">
-      <img src="2.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;" alt="India Team Event">
-      <div class="portfolio-overlay">
-        <div class="portfolio-overlay-title">India Office Launch Event</div>
-        <div class="portfolio-overlay-desc">Planned and coordinated entirely remotely including a private backwater boat cruise for the new India office team and flights for 2 executives from Sydney.</div>
-      </div>
-    </div>
-
+    <!-- Card 1: Kochi Itinerary -->
     <div class="portfolio-card" onclick="window.open('https://jcat00.github.io/Kochi-Team-Activities/', '_blank')" style="cursor:pointer;">
       <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;">
         <div style="font-size:2rem;margin-bottom:16px;">🚢</div>
@@ -1054,27 +1034,66 @@
       </div>
       <div class="portfolio-overlay">
         <div class="portfolio-overlay-title">Kochi Team Event Itinerary</div>
-        <div class="portfolio-overlay-desc">A full team day out planned for the India office including billiards, a private sunset backwater cruise across 27 islands, and dinner at BBQ Nation. Click to view the live itinerary.</div>
+        <div class="portfolio-overlay-desc">A full team day out planned for the India office including billiards, a private sunset backwater cruise across 27 islands, and dinner at BBQ Nation.</div>
       </div>
     </div>
 
-    <div class="portfolio-card" onclick="window.open('3.xlsx', '_blank')" style="cursor:pointer;">
+    <!-- Card 2: India Team Photo -->
+    <div class="portfolio-card">
+      <img src="2.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;" alt="India Team Event">
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">India Office Launch Event</div>
+        <div class="portfolio-overlay-desc">Planned and coordinated entirely remotely including a private backwater boat cruise for the new India office team and flights for 2 executives from Sydney.</div>
+      </div>
+    </div>
+
+    <!-- Card 3: Sydney Video tall -->
+    <div class="portfolio-card" style="grid-row: span 2; aspect-ratio: 9/16; position:relative;">
+      <video id="sydneyVideo" src="4.mp4" style="width:100%;height:100%;object-fit:cover;" muted loop autoplay playsinline></video>
+      <div id="unmuteBtn" onclick="
+        var v = document.getElementById('sydneyVideo');
+        var btn = document.getElementById('unmuteBtn');
+        if(v.muted){ v.muted=false; btn.innerHTML='🔊'; }
+        else { v.muted=true; btn.innerHTML='🔇'; }
+      " style="position:absolute;bottom:16px;right:16px;z-index:10;background:rgba(4,6,15,0.7);border:1px solid rgba(201,169,110,0.4);color:#c9a96e;font-size:1rem;padding:8px 14px;cursor:pointer;">🔇</div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">Sydney Work Immersion</div>
+        <div class="portfolio-overlay-desc">Selected by my employer for an onsite work immersion in Sydney, Australia. Filmed and edited entirely by me.</div>
+      </div>
+    </div>
+
+    <!-- Card 4: CEO Speaker Profile -->
+    <div class="portfolio-card" onclick="window.open('https://drive.google.com/file/d/1I9MvFBcVwWVtuxiqvYCm8MGlKrGDsAUc/view?usp=sharing', '_blank')" style="cursor:pointer;">
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:16px;">📄</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">CEO Speaker Profile</div>
+        <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">PDF Document</div>
+        <div style="font-size:0.75rem;color:#8891b0;line-height:1.7;">Speaker profile that secured CEO acceptance at ECC Early Childhood Care conference in New Zealand</div>
+        <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View Profile →</div>
+      </div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-title">CEO Speaker Profile</div>
+        <div class="portfolio-overlay-desc">Designed and written from scratch. Secured the CEO an acceptance to speak at the ECC Early Childhood Care conference in New Zealand.</div>
+      </div>
+    </div>
+
+    <!-- Card 5: Crisis CRM -->
+    <div class="portfolio-card" onclick="window.open('https://docs.google.com/spreadsheets/d/11-KlwBRyKDtI7A-qKlV70LssoIBAYw2H7RhCEG70qkg/edit?usp=sharing', '_blank')" style="cursor:pointer;">
       <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1535,#04060f);padding:30px;text-align:center;">
         <div style="font-size:2rem;margin-bottom:16px;">📊</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f0eadc;margin-bottom:10px;">Crisis Presentation CRM</div>
         <div style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Task Tracker · Team Overview · Risk Register</div>
-        <div style="font-size:0.75rem;color:#8891b0;line-height:1.7;">Built from scratch to manage a high-stakes team presentation</div>
-        <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View File →</div>
+        <div style="font-size:0.75rem;color:#8891b0;line-height:1.7;">Built from scratch to manage a high-stakes team presentation across 5 members</div>
+        <div style="margin-top:20px;padding:8px 20px;border:1px solid rgba(201,169,110,0.4);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#c9a96e;">View in Google Sheets →</div>
       </div>
       <div class="portfolio-overlay">
         <div class="portfolio-overlay-title">Crisis Presentation CRM</div>
-        <div class="portfolio-overlay-desc">Built a CRM from scratch to manage a high-stakes team presentation, assigning tasks, tracking progress, flagging technicals, and managing risks across 5 team members.</div>
+        <div class="portfolio-overlay-desc">Built a CRM from scratch to manage a high-stakes team presentation, assigning tasks, tracking progress, and managing risks across 5 team members.</div>
       </div>
     </div>
 
   </div>
 </section>
-
 <footer>
   <div class="footer-name">Reanee Fedelin</div>
   <div class="footer-dream">Future Astronaut &nbsp;✦&nbsp; Present Assistant</div>
